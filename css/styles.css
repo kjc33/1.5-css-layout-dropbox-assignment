@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+a,
+ul,
+ol {
+  font-family: AtlasGrotesk, sans-serif;
+}
+
+h1 {
+    font-family: "Sharp Grotesk", SharpGrotesk, "Sharp Grotesk KR", "Sharp Grotesk Thai", "Helvetica (Sharp Grotesk Fallback)", "Arial (Sharp Grotesk Fallback)", -apple-system, "system-ui", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.5rem;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    color: transparent;
+}
+
+/* Primary Header - Nav Button */
+
+header {
+  max-height: 48px;
+  border-bottom: 1px solid #a6917133;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+}
+
+.nav-wrapper-btn,
+.site-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-wrapper-btn {
+    background-color: #0061fe;
+    height: 48px;
+    width: 48px;
+}
+
+.site-logo {
+    padding: 0 8px;
+}
+
+.logo-wrapper img,
+.nav-btn img {
+    margin-top: 6px;
+}
+
+.header-right:hover {
+    background-color: #f2eee8;
+}
+
+.select-a-lang button {
+    cursor: pointer;
+}
+
+.select-a-lang button {
+    height: 48px;
+    width: 56px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.google-btn-wrapper,
+.apple-btn-wrapper {
+    width: 350px;
+    max-width: 100%;
+    min-width: min-content;
+    height: 40px;
+    transition: background-color .218s,border-color .218s;
+    -webkit-user-select: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    color: #3c4043;
+    cursor: pointer;
+    font-size: 14px;
+    height: 40px;
+    letter-spacing: 0.25px;
+    outline: none;
+    overflow: hidden;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.google-btn-wrapper:hover {
+    box-shadow: none;
+    border-color: #d2e3fc;
+    background: rgba(66,133,244,.04);
+    outline: none;
+}
+
+.apple-btn-wrapper:hover {
+    background-color: #EEEEEE;
+}
+
+.google-btn-wrapper {
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-family: "Google Sans",arial,sans-serif;
+}
+
+.apple-btn-wrapper {
+    border: solid 1px #cac5be;
+    border-radius: 0;
+    font-family: "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
+}
+
+.google-icon,
+.apple-icon {
+    position: absolute;
+}
+
+.google-icon {
+    top: 10px;
+    left: 10px;
+}
+
+.apple-icon {
+    top: 8px;
+    left: 10px;
+}
+
+.divider {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.divider:before {
+    background-color: hsla(36,10%,61%,.3);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    margin-left: -50%;
+    right: 0;
+}
+
+.divider:after {
+    background-color: hsla(36,10%,61%,.3);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    left: 0;
+    margin-right: -50%;
+}
+
+.divider-text {
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+.email-form {
+    display: grid;
+    gap: 8px;
+}
+
+label,
+input {
+    width: 100%;
+}
+
+label {
+    color: #524a3ed1;
+    font-family: "Atlas Grotesk Web", "Atlas Grotesk", AtlasGrotesk, "Helvetica (Atlas Grotesk Fallback)", "Arial (Atlas Grotesk Fallback)", -apple-system, "system-ui", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 0.75rem;
+}
+
+.email-input {
+    padding: 16px;
+    height: 48px;
+    border: 1px solid rgba(166, 158, 146, 0.6);
+    font-size: 1rem;
+    font-family: "lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+    color: rgba(82, 74, 62, 0.82);
+}
+
+.email-input:hover {
+    border: 1px solid #000000;
+}
+
+.email-input:focus {
+    box-shadow: rgb(66, 139, 255) 0px 0px 0px 3px;
+    outline-style: none;
+}
+
+.submit-btn {
+    margin-top: 35px;
+}
+
+.submit-btn {
+    display: inline-block;
+    background-color: #0061fe;
+    color: #ffffff;
+    font-size: 0.813rem;
+    font-family: "lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+    border: 2px solid #0061fe;
+    cursor: pointer;
+    padding: 16px 24px;
+}
+
+.submit-btn:hover {
+    background-color: #0057e5;
+    border-color: #0057e5;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 96px 50px 72px 50px;
+    }
+}
